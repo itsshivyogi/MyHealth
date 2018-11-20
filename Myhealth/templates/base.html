@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+		{% block title %}
+        <title>My Page</title>
+		{% endblock %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+		
+		{% block css %}
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static '/CSS/base.css' %}">
+		{% endblock %}
+		
+		</head>
+    <body>
+		{% block header %}
+		<div class = "header">
+			<div class = "headerimage">	
+				{% load static %}
+				<img src="{% static "/IMG/yoga2.png"%}" heigth = "500" width = "200" alt="HELLO">
+			</div>
+			
+			{% block headerelements %}
+			{% endblock %}
+		</div>
+		{% endblock %}
+
+		{% block container %}
+		<div class="container">
+			{% block containerelements %}
+			{% endblock %}
+		</div>
+		{% endblock %}
+		
+		{% block footer %}
+		<footer>
+			<div>
+				copyright @2018. My Health.
+			</div>
+		</footer>
+		{% endblock %}
+
+    </body>
+</html>

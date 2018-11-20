@@ -1,0 +1,54 @@
+body
+{
+	display: grid;
+	grid-gap: .5%;
+}
+
+.header
+{
+	display:grid;
+	grid-template-columns: 100%;
+	padding: 1% 1% 0% 1%;
+	background: white;
+}
+
+.header>ul
+{
+	display:grid;
+	padding: 14% 1% 0% 12%;
+	grid-template-columns: 10% 15% 50% 25%;
+	font-family: arial;
+	list-style: none;
+}
+
+.container
+{
+	display:grid;
+	grid-template-columns: 70% 29%;
+	/*
+	grid-column-gap: .5%;
+	grid-row-gap: .5%;
+	*/
+	grid-gap: 1%;
+}
+
+.container > div
+{
+	font-family: old bookman;
+	padding: 1em;
+	background: #ccc;
+}
+
+.container > div:nth-child(even)
+{
+	background: #ddd;
+}
+
+
+footer
+{
+	display:grid;
+	grid-gap: 1%;
+	background: darkgrey;
+}
+

@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+
+{% block css %}
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static '/CSS/home.css' %}">
+	<script type='text/javascript' src="{% static '/JS/food.js' %}"></script>  
+{% endblock %}
+
+
+{% block container-main %}
+<div class="containerelements2">
+	<div id="food">
+		<h3>Food Form. Please fill in the details: <h3><br>
+		<select id="meal-type" name="meal" onchange="createRow()">
+			<option>Select Meal Type</option>
+			<option>Breakfast</option>
+			<option>Lunch</option>
+			<option>Dinner</option>
+			<option>Snacks</option>
+		</select>
+		<div id="newRow"> </div><br>
+		<div id="addButton"> </div>
+		<form class="food-form" method="post">
+			{% csrf_token %}
+			<button type="submit">Submit</button>
+		 </form>
+		<br>
+	</div>
+</div>
+{% endblock %}

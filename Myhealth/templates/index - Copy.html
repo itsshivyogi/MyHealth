@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+		{% block title %}
+        <title>My Health</title>
+		{% endblock %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static '/CSS/index.css' %}">
+		</head>
+    <body>
+		<div class="header">
+			<div>
+				{% load static %}
+				<img src="{% static "/IMG/Myhealth.jpg" %}" alt="HELLO">
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="dummy.html">Health News</a></li>
+				<li><a href="dummy.html">Health Tips</a></li>
+				{% if user.is_authenticated %}
+					<li>Hi {{ user }}! <br><a href="logout.html">Logout</a></li>
+				{% else %}
+					<li><a href="login.html">Login</a></li>
+				{% endif %}	
+			</ul>	
+		</div>
+
+		{% block content %}
+		<div class="container">
+			<div>
+				<h2>News</h2>
+					To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:area has 3:<br>
+					To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer arTo define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:ea has 3:<br>
+					To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:
+					To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:
+			</div>
+			<div>
+				<h2>Pics</h2>
+					To define a basic CSS grid, we place display: grid on an element. Where would it make sense to do this?  
+					Well, our main content area has 2 columns, and the footer area has 3:
+			</div>
+		</div>
+		{% endblock %}
+		
+		{% block footer %}
+		<footer>
+			<div>
+				copyright @2018. My Health.
+			</div>
+		</footer>
+		{% endblock %}
+
+    </body>
+</html>

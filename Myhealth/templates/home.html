@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	<title>Login</title>
+{% endblock %}
+
+{% block css %}
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static '/CSS/home.css' %}">
+{% endblock %}
+
+{% block headerelements %}
+	<div class="headerelements1">
+		<div>Home</div>
+		<div class="dropdown">
+			<div class="dropbtn">Update</div>
+			<div class="dropdown-content">
+				<a href="food.html">Food</a>
+				<a href="activity.html">Activity</a>
+			</div>
+		</div>
+		<div>View</div>
+		<div>Gallery</div>
+		<div>Others</div>
+	</div>
+	<div class="headerelements2">
+		<h5>Welcome {{user}}!<br><a = href="#">change password</a><br><a href="logout.html">logout</a></h5>
+	</div>
+{% endblock %}
+	
+{% block containerelements %}
+	<div class="containerelements1">
+		<div>
+			<h2>Health Tips<hr></h2>
+		</div>
+		<div>
+			<p>There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke 
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernker
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			</p>
+		</div>
+	</div>
+	{% block container-main %}
+	<div class="containerelements2">
+		<h5>Home</h5>
+		<h5>Update</h5>
+		<h5>View</h5>
+	</div>
+	{% endblock %}
+	<div class="containerelements3">
+		<div>
+			<h2>Challenge<hr></h2>
+		</div>
+		<div>
+			<p>There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke 
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernker
+			There are many ways to promtot enrer ewkjjekjrejkrer ejekejre rerkerer ernke
+			</p>
+		</div>
+	</div>
+{% endblock %}
